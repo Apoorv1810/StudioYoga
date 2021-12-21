@@ -1,0 +1,395 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: 'Gabriola', cursive;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@448&display=swap');
+nav {
+    background-color: gainsboro;
+}
+
+li {
+    font-family: 'Gabriola', cursive;
+    font-size: 28px;
+    color: darkslategrey;
+    margin-right: 60px;
+}
+
+#headrow {
+    /* position: fixed; */
+    background-color: gainsboro;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#logo {
+    height: 80px;
+    width: 220px;
+}
+
+div.h_div_1 {
+    float: left;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+
+/*--------------------------------------------------------------------DropDOwn CSS------------------------------------------------------------------------------*/
+
+div.h_div_2 {
+    margin-left: 550px;
+    float: left;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    overflow: hidden;
+    display: inline-flex;
+}
+
+div.h_div_2>a {
+    padding: 0px 15px 0px 15px;
+    float: left;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+div.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+div.dropdown .dropbtn {
+    float: left;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+div.h_div_2>a:hover,
+div.dropdown:hover .dropbtn {
+    background-color: wheat;
+}
+
+div.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+div.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/*----------------------------------------------------------------Continued the rest of CSS------------------------------------------------------------------------*/
+
+div.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    width=100%;
+}
+
+div.hline_block {
+    background-image: url("images/pose1.jpg");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    width: 100%;
+    height: 650px;
+}
+
+div.main_content {
+    font-family: 'Gabriola', cursive;
+    font-size: 58px;
+    text-align: center;
+}
+
+div.banner_empty {
+    height: 80px;
+    width: auto;
+}
+
+div.banner_content {
+    font-size: 70px;
+    font-family: 'Gabriola', cursive;
+    color: mintcream;
+    text-shadow: 4px 4px 9px black;
+}
+
+div.banner_subcon {
+    font-size: 35px;
+    font-family: 'Gabriola', cursive;
+    color: mintcream;
+    text-shadow: 4px 4px 9px black;
+}
+
+div.logo2>img {
+    height: 70px;
+}
+
+div.content1 {
+    font-family: 'Gabriola', cursive;
+    font-size: 29.5px;
+    text-align: left;
+}
+
+div.artis {
+    display: flow-root;
+    background-color: cyan;
+    font-family: 'Gabriola', cursive;
+    font-size: 26px;
+    text-align: left;
+    width: min-content;
+    margin-left: 530px;
+}
+
+h2 {
+    background-color: aliceblue;
+}
+
+div.footer {
+    background-color: gainsboro;
+    display: flex;
+    font-family: 'Gabriola', cursive;
+    font-size: 23px;
+}
+
+div.left_con {
+    margin-left: 150px;
+    margin-top: 10px;
+}
+
+div.right_con {
+    margin-left: 700px;
+    margin-top: 20px;
+}
+
+
+/* --------------------------------------------------------------------Class Page CSS--------------------------------------------------------------------- */
+
+div.contClass {
+    margin-left: 15%;
+    margin-right: 5%;
+    background-color: rgb(253, 254, 255);
+    padding: 25px 100px 25px 100px;
+    height: 1550px;
+    width: 1000px;
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 0px 8px 10px 1px black;
+    line-height: 0.9;
+}
+
+img.prana {
+    width: 800px;
+}
+
+h2.hPr {
+    font-size: 29px;
+    background-color: inherit;
+}
+
+div.contClass>p {
+    line-height: 1.1;
+    font-size: 24px;
+}
+
+div.contClass>li {
+    font-size: 21px;
+}
+
+
+/* --------------------------------------------------------------------ABOUT PAGE CSS--------------------------------------------------------------------- */
+
+div.cont_About {
+    margin-left: 15%;
+    margin-right: 5%;
+    background-color: rgb(253, 254, 255);
+    padding: 25px 100px 25px 100px;
+    height: 2800px;
+    width: 1000px;
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 0px 8px 10px 1px black;
+}
+
+span.spanHead {
+    font-size: 45px;
+    background-color: gainsboro;
+    padding: 5px 10px 5px 10px;
+}
+
+img.yogini {
+    margin-left: 5%;
+}
+
+img.pract {
+    height: 500px;
+    width: 800px;
+}
+
+
+/* ----------------------------------------------------------------------RYS200 PAGE CSS--------------------------------------------------------------------- */
+
+div.ry200Cont {
+    margin-left: 15%;
+    margin-right: 5%;
+    background-color: rgb(253, 254, 255);
+    padding: 25px 100px 25px 100px;
+    height: 4890px;
+    width: 1000px;
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 0px 8px 10px 1px black;
+}
+
+span.spanHead2 {
+    font-size: 40px;
+    /*background-color: gainsboro;*/
+    padding: 5px 10px 5px 10px;
+    text-decoration: underline;
+}
+
+span.spanHead3 {
+    font-size: 35px;
+    /*background-color: gainsboro;*/
+    padding: 5px 10px 5px 10px;
+    /*text-decoration: underline;*/
+}
+
+div.ry200Cont>p {
+    line-height: 1.1;
+    font-size: 25px;
+}
+
+div.ry200Cont>table {
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+article.course_art {
+    line-height: 1.0;
+}
+
+article.course_art>h2 {
+    background-color: inherit;
+    font-size: 29px;
+}
+
+article.course_art>p {
+    font-size: 22px;
+}
+
+span.LinkCont {
+    font-size: 22px;
+    background-color: khaki;
+    padding: 3px 5px 3px 5px;
+    float: left;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 0px 5px 0px;
+}
+
+
+/* ----------------------------------------------------------------------RYS300 PAGE CSS--------------------------------------------------------------------- */
+
+div.ry300Cont {
+    margin-left: 15%;
+    margin-right: 5%;
+    background-color: rgb(253, 254, 255);
+    padding: 25px 100px 25px 100px;
+    height: 10800px;
+    width: 1000px;
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 0px 8px 10px 1px black;
+}
+
+div.ry300Cont>p {
+    line-height: 1.1;
+    font-size: 25px;
+}
+
+div.ry300Cont>table {
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+
+/* --------------------------------------------------------------------CONTACT PAGE CSS--------------------------------------------------------------------- */
+
+div.Cont_label {
+    display: contents;
+    margin-left: 10%;
+    margin-right: 5%;
+    padding: 10px 10px 10px 10px;
+    height: 200px;
+    width: 1200px;
+    border: 2px solid black;
+}
+
+#span1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+#span2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+div.Cont_cont {
+    margin-left: 15%;
+    margin-right: 5%;
+    background-color: rgb(253, 254, 255);
+    padding: 25px 50px 25px 50px;
+    height: 850px;
+    width: 1000px;
+    border: 3px solid white;
+    border-radius: 15px;
+    box-shadow: 0px 8px 10px 1px black;
+}
+
+div.art_left {
+    line-height: 0.8;
+}
+
+div.art_right {
+    margin-left: 190px;
+    line-height: 0.8;
+}
+
+span.form_err {
+    font-size: 19.5px;
+}

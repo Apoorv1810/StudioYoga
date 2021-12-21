@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!-- dtd path : document type definition -->
+<html>
+
+<head>
+    <title>Yoga Studio</title>
+
+    <meta charset="UTF-8">
+    <meta name="keywords" content="put imp words from ur webpage">
+    <meta name="author" content="put name of author">
+    <meta name="description" content="put short descr">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="Script.js"></script>
+</head>
+
+<body class="bodCont">
+    <header id="headrow">
+        <div class="container1">
+            <div class="h_div_1">
+                <a href="index.html">
+                    <img src="images/logo.jpg" alt="Yoga Studio" id="logo">
+                </a>
+            </div>
+            <div class="h_div_2">
+                <a href="index.html">HOME</a>
+                <a href="About.html">ABOUT</a>
+                <a href="Classes.html">CLASSES</a>
+                <div class="dropdown">
+                    <button class="dropbtn">TTC 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="RYS200.html">RYS 200 Teacher Training Course</a>
+                        <a href="RYS300.html">RYS 300 Teacher Training Course</a>
+                    </div>
+                </div>
+                <a href="Contact.html">CONTACT US</a>
+            </div>
+        </div>
+    </header>
+    <div class="Cont_label">
+        <div id="span1">
+            Yoga Studio
+        </div>
+        <div id="span2">
+            Meditate . Heal . Connect
+        </div>
+    </div>
+    <div class="Cont_cont">
+        <article style="display: flex; flex-wrap: wrap; flex-direction: row;">
+            <div class="art_left">
+                <h3 style="font-size: 35px">Rishikesh</h3>
+                <p style="font-size: 24px">139, Tapovan</p>
+                <p style="font-size: 24px">Ahead Lakshman Jhula Circle</p>
+                <p style="font-size: 24px">Rishikesh, Uttarakhand. 249201</p>
+                <p style="font-size: 24px">India</p>
+                <p style="font-size: 24px"><b>Phone: </b> +91-99761108721</p>
+                <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2264.6403562270457!2d78.3232235641872!3d30.129212744930584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39091644eae43e45%3A0xd6038c5d40192c49!2sYoganandham!5e0!3m2!1sen!2sin!4v1640002852724!5m2!1sen!2sin"
+                        width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+            </div>
+            <div class="art_right">
+                <h3 style="font-size: 35px">Email</h3>
+                <p style="font-size: 24px">yog_studio_rksh@gmail.com</p>
+                <h3 style="font-size: 35px">Contact Form/Registration Form</h3>
+                <form action="target.html" id="Contact_Form" method="post">
+                    <table style="font-size: 26px">
+                        <tr>
+                            <td> <label for="name"><b>Name</b></label> </td>
+                        </tr>
+                        <tr>
+                            <td> <input type="text" id="name" onblur="valName()" placeholder="Enter Your Name" required> </td>
+                            <td><span class="form_err" id="sp1"></span></td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="num"><b>Contact No</b></label> </td>
+                        </tr>
+                        <tr>
+                            <td> <input type="text" id="num" onblur="valNum()" placeholder="Enter Your Number" required> </td>
+                            <td><span class="form_err" id="sp2"></span></td>
+                        </tr>
+
+
+                        <tr>
+                            <td> <label for="email"><b>Email</b></label> </td>
+                        </tr>
+                        <tr>
+                            <td> <input type="email" id="email" onblur="valEma()" placeholder="Enter Your Email" required> </td>
+                            <td><span class="form_err" id="sp3"></span></td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="country"><b>Country</b></label> </td>
+                        </tr>
+                        <tr>
+                            <td> <input type="text" id="country" onblur="valCun()" placeholder="Enter Your Country" required> </td>
+                            <td><span class="form_err" id="sp4"></span></td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="subj"><b>Subject</b></label> </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input list="browsers" id="list" required placeholder="Select a Query">
+                                <datalist id="browsers">
+                                    <option value="Online RYS 200 Yoga Teacher Training">
+                                    <option value="RYS 200 Yoga Teacher Training">
+                                    <option value="Online RYS 300 Yoga Teacher Training">
+                                    <option value="RYS 300 Yoga Teacher Training">
+                                    <option value="Fees and Other Queries">
+                                </datalist>
+                            </td>
+                            <td><span class="form_err" id="sp5"></span></td>
+                        </tr>
+
+                        <tr>
+                            <td> <label for="com_des"><b>Comment/Description</b></label> </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"> <textarea name="com_des" id="com_des" cols="10" rows="10" onblur="valDC()" style="width: 300px;" required></textarea> </td>
+                            <td><span class="form_err" id="sp6"></span></td>
+                        </tr>
+
+                        <tr>
+                            <td> <input type="submit" value="Submit" id="submit_but"> </td>
+                            <td><input type="reset" value="Reset" id="reset_but"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </article>
+    </div> <br>
+
+    <footer id="footer">
+        <div class="footer">
+            <div class="left_con">
+                © Yoga Studio Ltd. 2021. <br> All Rights Reserved.
+                <br><br>
+            </div>
+
+            <div class="right_con">
+                <img src="images/ya1.png" style="height: 70px;">
+                <img src="images/ya2.png" style="height: 70px;">
+                <img src="images/ya3.png" style="height: 70px;">
+                <img src="images/ya4.png" style="height: 70px;">
+                <img src="images/ya5.png" style="height: 70px;">
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
